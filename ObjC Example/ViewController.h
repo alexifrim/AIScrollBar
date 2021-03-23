@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ObjcExample-Swift.h>
+@import AIScrollBar;
 
 typedef NS_ENUM(NSUInteger, kFieldLabelPosition) {
     kFieldLabelPositionTop = 0,

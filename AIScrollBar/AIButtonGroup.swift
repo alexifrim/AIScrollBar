@@ -8,11 +8,11 @@
 import UIKit
 
 /// Group of buttons that can act as a segmented control that allows multiple selections
-@objc class AIButtonGroup: UIControl {
+@objc open class AIButtonGroup: UIControl {
     internal private(set) var buttons: [AIButtonSelectable] = Array()
     internal private(set) var separators: [UIView] = Array()
-    @objc let selectedIndexes: NSMutableIndexSet = NSMutableIndexSet()
-    @objc var separatorColor: UIColor = .black {
+    @objc public let selectedIndexes: NSMutableIndexSet = NSMutableIndexSet()
+    @objc open var separatorColor: UIColor = .black {
         didSet {
             for separator in self.separators {
                 separator.backgroundColor = self.separatorColor
@@ -20,7 +20,7 @@ import UIKit
         }
     }
     /// if set, this will be applied to all the buttons part of this group
-    @objc var selectionBackgroundColor: UIColor? {
+    @objc open var selectionBackgroundColor: UIColor? {
         didSet {
             if let color = self.selectionBackgroundColor {
                 for button in self.buttons {
@@ -29,17 +29,17 @@ import UIKit
             }
         }
     }
-    @objc var buttonPadding = 24
-    @objc var buttonSelectionHandler: ((_ sender: AIButtonGroup, _ index: Int, _ select: Bool) -> Bool)?
-    @objc var buttonWidth: CGFloat = 0
+    @objc open var buttonPadding = 24
+    @objc open var buttonSelectionHandler: ((_ sender: AIButtonGroup, _ index: Int, _ select: Bool) -> Bool)?
+    @objc open var buttonWidth: CGFloat = 0
     
-    @objc func setEnabled(_ enabled: Bool, forIndex index: Int) {
+    @objc open func setEnabled(_ enabled: Bool, forIndex index: Int) {
         assert(index >= 0 && index < self.buttons.count, "out of bounds")
         
         let button = self.buttons[index]
         button.isEnabled = enabled
     }
-    override var isEnabled: Bool {
+    open override var isEnabled: Bool {
         didSet {
             if oldValue == self.isEnabled {
                 return
@@ -51,7 +51,7 @@ import UIKit
     }
     
     // MARK: - setup
-    @objc func addButton() -> AIButtonSelectable {
+    @objc open func addButton() -> AIButtonSelectable {
         let button = AIButtonSelectable(frame: .zero)
         button.selectionTag = self.buttons.count
         button.backgroundColorDefault = self.backgroundColor
@@ -76,7 +76,7 @@ import UIKit
     }
     
     // MARK: - layout
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         var frame = CGRect(x: 0, y: 0,
@@ -108,7 +108,7 @@ import UIKit
             }
         }
     }
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
+    open override func sizeThatFits(_ size: CGSize) -> CGSize {
         // !!!: there are some issues (at least on the simulator) where layoutSubviews is not called, even if content was never layed out prior to this (even if `setNeedsLayout` is called anywhere prior to this)
         self.layoutIfNeeded()
         var fitSize = size
@@ -120,7 +120,7 @@ import UIKit
         }
         return fitSize
     }
-    override var intrinsicContentSize: CGSize {
+    open override var intrinsicContentSize: CGSize {
         get {
             return self.sizeThatFits(.init(width: CGFloat.greatestFiniteMagnitude, height: 32))
         }
@@ -144,7 +144,7 @@ import UIKit
         
     }
 
-    @objc func setSelection(_ selected: Bool, for index: Int) {
+    @objc open func setSelection(_ selected: Bool, for index: Int) {
         assert(index >= 0 && index < self.buttons.count)
         
         let button = self.buttons[index]
@@ -175,12 +175,12 @@ import UIKit
             }
         }
     }
-    @objc func deselectAll() {
+    @objc open func deselectAll() {
         while self.selectedIndexes.firstIndex != NSNotFound {
             self.setSelection(false, for: self.selectedIndexes.firstIndex)
         }
     }
-    @objc func selectAll() {
+    @objc open func selectAll() {
         for index in 0 ..< self.buttons.count {
             self.setSelection(true, for: index)
         }
@@ -188,32 +188,32 @@ import UIKit
     
     
     // MARK: - buttons access
-    @objc func button(at index: Index) -> UIButton {
+    @objc open func button(at index: Index) -> UIButton {
         assert(index >= 0 && index < self.buttons.count, "Out of bounds")
         return self.buttons[index]
     }
-    @objc func buttonCount() -> Int {
+    @objc open func buttonCount() -> Int {
         return self.buttons.count
     }
 }
 
 extension AIButtonGroup: Collection {
-    typealias Index = Int
-    typealias Button = UIButton
-    var startIndex: Int {
+    public typealias Index = Int
+    public typealias Button = UIButton
+    public var startIndex: Int {
         return 0
     }
-    var endIndex: Int {
+    public var endIndex: Int {
         return self.count - 1
     }
-    subscript(position: Int) -> Button {
+    public subscript(position: Int) -> Button {
         assert(position >= 0 && position < self.buttons.count)
         return self.buttons[position]
     }
-    func index(after i: Int) -> Int {
+    public func index(after i: Int) -> Int {
         return i + 1
     }
-    var count: Int {
+    public var count: Int {
         return self.buttons.count
     }
 }

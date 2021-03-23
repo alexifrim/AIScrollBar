@@ -9,10 +9,10 @@ import UIKit
 
 
 /// Button which also changes background color based on the selection state
-@objc class AIButtonSelectable: UIButton {
+@objc open class AIButtonSelectable: UIButton {
     // MARK: properties
-    @objc var backgroundColorDefault: UIColor?
-    @objc var backgroundColorSelected: UIColor? {
+    @objc open var backgroundColorDefault: UIColor?
+    @objc open var backgroundColorSelected: UIColor? {
         didSet {
             if self.isSelected {
                 self.refresh(selected: self.isSelected)
@@ -21,7 +21,7 @@ import UIKit
     }
     /// Overlay to show over the selection (e.g. in case a white border would need to be displayed, while a button is selected)
     /// In case multiple selectable buttons are grouped together, a shared `selectionOverlay` can be shared between them, if only one of them can be selected at a time
-    @objc var selectionOverlay: UIView? {
+    @objc open var selectionOverlay: UIView? {
         didSet {
             if let _ = self.selectionOverlay, self.isSelected {
                 self.refresh(selected: self.isSelected)
@@ -29,8 +29,8 @@ import UIKit
         }
     }
     /// Can be used to id the selected buttons  - we don't use `tag` to avoid conflicts
-    @objc var selectionTag: Int = 0
-    override var backgroundColor: UIColor? {
+    @objc open var selectionTag: Int = 0
+    open override var backgroundColor: UIColor? {
         get {
             return super.backgroundColor
         }
@@ -41,17 +41,17 @@ import UIKit
             }
         }
     }
-    override var isEnabled: Bool {
+    open override var isEnabled: Bool {
         didSet {
             self.refresh(selected: self.isSelected)
         }
     }
-    override var isHighlighted: Bool {
+    open override var isHighlighted: Bool {
         didSet {
             self.refresh(selected: self.isSelected || self.isHighlighted)
         }
     }
-    override var isSelected: Bool {
+    open override var isSelected: Bool {
         didSet {
             if oldValue != self.isSelected {
                 self.refresh(selected: self.isSelected)
@@ -108,31 +108,31 @@ import UIKit
     }
     
     // we override state properties so that buttons that are both selected and disabled show the disabled state
-    override func setTitleColor(_ color: UIColor?, for state: UIControl.State) {
+    open override func setTitleColor(_ color: UIColor?, for state: UIControl.State) {
         super.setTitleColor(color, for: state)
         if state == .disabled {
             super.setTitleColor(color, for: [.disabled, .selected])
         }
     }
-    override func setTitle(_ title: String?, for state: UIControl.State) {
+    open override func setTitle(_ title: String?, for state: UIControl.State) {
         super.setTitle(title, for: state)
         if state == .disabled {
             super.setTitle(title, for: [.disabled, .selected])
         }
     }
-    override func setImage(_ image: UIImage?, for state: UIControl.State) {
+    open override func setImage(_ image: UIImage?, for state: UIControl.State) {
         super.setImage(image, for: state)
         if state == .disabled {
             super.setImage(image, for: [.disabled, .selected])
         }
     }
-    override func setBackgroundImage(_ image: UIImage?, for state: UIControl.State) {
+    open override func setBackgroundImage(_ image: UIImage?, for state: UIControl.State) {
         super.setBackgroundImage(image, for: state)
         if state == .disabled {
             super.setBackgroundImage(image, for: [.disabled, .selected])
         }
     }
-    override func setTitleShadowColor(_ color: UIColor?, for state: UIControl.State) {
+    open override func setTitleShadowColor(_ color: UIColor?, for state: UIControl.State) {
         super.setTitleShadowColor(color, for: state)
         if state == .disabled {
             super.setTitleShadowColor(color, for: [.disabled, .selected])

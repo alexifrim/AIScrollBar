@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AIScrollBar: UIScrollView {
+@objc open class AIScrollBar: UIScrollView {
     internal static let defaultButtonWidth: CGFloat = 38
     internal static let defaultSeparatorWidth: CGFloat = 3
     
@@ -15,20 +15,20 @@ class AIScrollBar: UIScrollView {
     internal var nextX: CGFloat = 0
     
     /// Set to true to center the contents, while the bar is wider than the content (rather than aligning contents to left)
-    @objc var autoCenter: Bool = false
+    @objc open var autoCenter: Bool = false
     /// List of groups added with `addButtonGroup(with:)`
-    @objc private(set) var buttonGroups: [AIButtonGroup] = Array()
+    @objc open private(set) var buttonGroups: [AIButtonGroup] = Array()
     internal private(set) var separators: [UIView] = Array()
     
     internal var borderTop: UIView?;
     internal var borderBottom: UIView?;
     
     /// Color used for top/bottom border as well as separator between different groups
-    @objc var borderColor: UIColor = .gray
+    @objc open var borderColor: UIColor = .gray
     /// Color used as separator between buttons inside a group
-    @objc var separatorColor: UIColor = .black
+    @objc open var separatorColor: UIColor = .black
     
-    override required init(frame: CGRect) {
+    public override required init(frame: CGRect) {
         var frame = frame
         if frame.size.height <= 1 {
             frame.size.height = 40
@@ -41,12 +41,12 @@ class AIScrollBar: UIScrollView {
         self.separators.reserveCapacity(14)
         self.translatesAutoresizingMaskIntoConstraints = false
     }
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - setup
-    @objc func addButtonGroup(with setup: (_ group: AIButtonGroup) -> Void) -> AIButtonGroup {
+    @objc open func addButtonGroup(with setup: (_ group: AIButtonGroup) -> Void) -> AIButtonGroup {
         if self.buttonGroups.count > 0 {
             self.addSeparator()
         }
@@ -73,7 +73,7 @@ class AIScrollBar: UIScrollView {
         self.addSubview(border)
         self.separators.append(border)
     }
-    @objc func setupBorders() {
+    @objc open func setupBorders() {
         assert(self.borderTop == nil && self.borderBottom == nil, "Borders are already set")
         if self.borderTop != nil {
             return
@@ -144,7 +144,7 @@ class AIScrollBar: UIScrollView {
         }
         borderBottom.frame = frame
     }
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         self.resetContentSize()
@@ -153,7 +153,7 @@ class AIScrollBar: UIScrollView {
         self.layoutBorders()
     }
     @available(iOS 11.0, *)
-    override func safeAreaInsetsDidChange() {
+    open override func safeAreaInsetsDidChange() {
         super.safeAreaInsetsDidChange()
         
         self.invalidateIntrinsicContentSize()
@@ -192,7 +192,7 @@ class AIScrollBar: UIScrollView {
         }
         self.contentInset = insets
     }
-    override var intrinsicContentSize: CGSize {
+    open override var intrinsicContentSize: CGSize {
         get {
             var size = super.intrinsicContentSize
             size.height = self.contentHeight

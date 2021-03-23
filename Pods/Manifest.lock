@@ -1,0 +1,16 @@
+PODS:
+  - AIScrollBar (0.0.1)
+
+DEPENDENCIES:
+  - AIScrollBar (from `.`)
+
+EXTERNAL SOURCES:
+  AIScrollBar:
+    :path: "."
+
+SPEC CHECKSUMS:
+  AIScrollBar: 2f2d4dd463d659f5c6b9ba5fba19e7edfc30f04f
+
+PODFILE CHECKSUM: c20ecf12b0d07bd6e279188fc0010f8abdfc28aa
+
+COCOAPODS: 1.10.1

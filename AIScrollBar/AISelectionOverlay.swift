@@ -8,8 +8,8 @@
 import UIKit
 
 /// Simple overlay view used to mark selection
-@objc class AISelectionOverlay : UIView {
-    @objc let border = CALayer()
+@objc open class AISelectionOverlay : UIView {
+    @objc public let border = CALayer()
     
     convenience init() {
         self.init(frame: .zero)
@@ -18,7 +18,7 @@ import UIKit
         super.init(frame: frame)
         self.setup()
     }
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setup()
     }
@@ -36,7 +36,7 @@ import UIKit
         self.layer.addSublayer(border)
     }
     
-    override func layoutSublayers(of layer: CALayer) {
+    open override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
         border.frame = self.layer.bounds.insetBy(dx: 3, dy: 3)
     }

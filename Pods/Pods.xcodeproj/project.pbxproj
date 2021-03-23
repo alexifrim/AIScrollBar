@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11716BDBFF4F34288CB2C51354CD34D9 /* AIScrollBar.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCAC07648B96CC6A821E20A4FA19302 /* AIScrollBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D1212BC25F64BFAE96EB04EE084C90B /* AIScrollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6FA2199336E42890F1C9CDD987DFD /* AIScrollBar.swift */; };
+		2BA1BB87926785CC828C8C3E4EDDCB65 /* AIButtonSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B102554DBCEEE14C9F38E5B5655121 /* AIButtonSelectable.swift */; };
+		3F9EEA08D8BBB789FBA3BE234CDF5663 /* AIButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84510C9C29A2ADB4AFD8157030D6810A /* AIButtonGroup.swift */; };
+		49D5586B5E959A813E7A01F56024E4A9 /* Pods-ObjC Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF5FC55F21DB56588FFACFA140A474 /* Pods-ObjC Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C19FA7340672B8B4ECA9342C18B25106 /* AISelectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5CC609375B09A8155BCAC57CBF3 /* AISelectionOverlay.swift */; };
+		C4121FD038FF97389273A47DCB729960 /* AIScrollBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEBC3C0AE551528106521CB2EC349C1D /* AIScrollBar-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C43326529CD10C38038DC65DBBC0874A /* AIScrollBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B997852217B4378C99BB5F3E3ECC21BA /* AIScrollBar-dummy.m */; };
+		E231BC8672D67DFFE9727C5BA30453C3 /* Pods-ObjC Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F110534B69AA19C58499F9A372330 /* Pods-ObjC Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CA03AEEF24841472059E04FB786DCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C740D0CAD18E2178C851E8B95B6FB53A;
+			remoteInfo = AIScrollBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17B2EDC5385C20EE6A8F27585AC84F63 /* libPods-ObjC Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjC Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1F110534B69AA19C58499F9A372330 /* Pods-ObjC Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjC Example-dummy.m"; sourceTree = "<group>"; };
+		35FF5FC55F21DB56588FFACFA140A474 /* Pods-ObjC Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjC Example-umbrella.h"; sourceTree = "<group>"; };
+		3C57B5B5442B7BDAABDBC76B92CD1E2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4526621FE7C1BACBBDC8299346EA129D /* Pods-ObjC Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjC Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45B102554DBCEEE14C9F38E5B5655121 /* AIButtonSelectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AIButtonSelectable.swift; path = AIScrollBar/AIButtonSelectable.swift; sourceTree = "<group>"; };
+		5A55FFFC1ACD804A4A1B70AAA4299664 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		84510C9C29A2ADB4AFD8157030D6810A /* AIButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AIButtonGroup.swift; path = AIScrollBar/AIButtonGroup.swift; sourceTree = "<group>"; };
+		88ED6E8C401E60C5764CFADCABBA75DA /* Pods-ObjC Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjC Example.debug.xcconfig"; sourceTree = "<group>"; };
+		89A96DFEC95B19905A879D652FAC0D44 /* Pods-ObjC Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjC Example.modulemap"; sourceTree = "<group>"; };
+		91D66741C5CA9188BB67CCDF34398395 /* libAIScrollBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAIScrollBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B43F30C8CA03EEA4A2918B3A9C2C6998 /* AIScrollBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AIScrollBar.release.xcconfig; sourceTree = "<group>"; };
+		B46C3077A9990DC4F9EE047C20560109 /* Pods-ObjC Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjC Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B997852217B4378C99BB5F3E3ECC21BA /* AIScrollBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AIScrollBar-dummy.m"; sourceTree = "<group>"; };
+		BF1E0D740E8E41D9E9B287C5D0B18791 /* AIScrollBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AIScrollBar.modulemap; sourceTree = "<group>"; };
+		CCF0A903E2BCA5F2B82CB8A331F502E8 /* Pods-ObjC Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjC Example.release.xcconfig"; sourceTree = "<group>"; };
+		CFC6FA2199336E42890F1C9CDD987DFD /* AIScrollBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AIScrollBar.swift; path = AIScrollBar/AIScrollBar.swift; sourceTree = "<group>"; };
+		DC2AA5CC609375B09A8155BCAC57CBF3 /* AISelectionOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AISelectionOverlay.swift; path = AIScrollBar/AISelectionOverlay.swift; sourceTree = "<group>"; };
+		DEF609B0CE843A7DE6E31846E982056C /* AIScrollBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AIScrollBar.debug.xcconfig; sourceTree = "<group>"; };
+		F7818AC1DB5E7F73F332CD1F12453869 /* AIScrollBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AIScrollBar-prefix.pch"; sourceTree = "<group>"; };
+		F9EE00B1491ABB0C1B9062F7A8A940C0 /* AIScrollBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AIScrollBar.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		FBCAC07648B96CC6A821E20A4FA19302 /* AIScrollBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AIScrollBar.h; path = AIScrollBar/AIScrollBar.h; sourceTree = "<group>"; };
+		FEBC3C0AE551528106521CB2EC349C1D /* AIScrollBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AIScrollBar-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		557CB5EEF9E89BAB9E63370984120A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835015A87A869C3845CFDDB95637F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F37C2FD06C451B80A3EFE34C9DE57E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F9EE00B1491ABB0C1B9062F7A8A940C0 /* AIScrollBar.podspec */,
+				5A55FFFC1ACD804A4A1B70AAA4299664 /* LICENSE */,
+				3C57B5B5442B7BDAABDBC76B92CD1E2A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		569EE4B624A77CBAA0F4C56DD886996C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83BF01EEEAFE6DE07F7034C5AA9C0E55 /* Pods-ObjC Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		56AB2F3B3EB870C1804F74D5D3046D3C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3F31305D58F8722FA94F60294FB8158 /* AIScrollBar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		83BF01EEEAFE6DE07F7034C5AA9C0E55 /* Pods-ObjC Example */ = {
+			isa = PBXGroup;
+			children = (
+				89A96DFEC95B19905A879D652FAC0D44 /* Pods-ObjC Example.modulemap */,
+				4526621FE7C1BACBBDC8299346EA129D /* Pods-ObjC Example-acknowledgements.markdown */,
+				B46C3077A9990DC4F9EE047C20560109 /* Pods-ObjC Example-acknowledgements.plist */,
+				1F1F110534B69AA19C58499F9A372330 /* Pods-ObjC Example-dummy.m */,
+				35FF5FC55F21DB56588FFACFA140A474 /* Pods-ObjC Example-umbrella.h */,
+				88ED6E8C401E60C5764CFADCABBA75DA /* Pods-ObjC Example.debug.xcconfig */,
+				CCF0A903E2BCA5F2B82CB8A331F502E8 /* Pods-ObjC Example.release.xcconfig */,
+			);
+			name = "Pods-ObjC Example";
+			path = "Target Support Files/Pods-ObjC Example";
+			sourceTree = "<group>";
+		};
+		ADCD90BDA207F50677AF91005B709B51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91D66741C5CA9188BB67CCDF34398395 /* libAIScrollBar.a */,
+				17B2EDC5385C20EE6A8F27585AC84F63 /* libPods-ObjC Example.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				56AB2F3B3EB870C1804F74D5D3046D3C /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				ADCD90BDA207F50677AF91005B709B51 /* Products */,
+				569EE4B624A77CBAA0F4C56DD886996C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3F31305D58F8722FA94F60294FB8158 /* AIScrollBar */ = {
+			isa = PBXGroup;
+			children = (
+				84510C9C29A2ADB4AFD8157030D6810A /* AIButtonGroup.swift */,
+				45B102554DBCEEE14C9F38E5B5655121 /* AIButtonSelectable.swift */,
+				FBCAC07648B96CC6A821E20A4FA19302 /* AIScrollBar.h */,
+				CFC6FA2199336E42890F1C9CDD987DFD /* AIScrollBar.swift */,
+				DC2AA5CC609375B09A8155BCAC57CBF3 /* AISelectionOverlay.swift */,
+				00F37C2FD06C451B80A3EFE34C9DE57E /* Pod */,
+				F8E9D2A8C71155BA3FE9CB28111CD571 /* Support Files */,
+			);
+			name = AIScrollBar;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E9D2A8C71155BA3FE9CB28111CD571 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E0D740E8E41D9E9B287C5D0B18791 /* AIScrollBar.modulemap */,
+				B997852217B4378C99BB5F3E3ECC21BA /* AIScrollBar-dummy.m */,
+				F7818AC1DB5E7F73F332CD1F12453869 /* AIScrollBar-prefix.pch */,
+				FEBC3C0AE551528106521CB2EC349C1D /* AIScrollBar-umbrella.h */,
+				DEF609B0CE843A7DE6E31846E982056C /* AIScrollBar.debug.xcconfig */,
+				B43F30C8CA03EEA4A2918B3A9C2C6998 /* AIScrollBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/AIScrollBar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F442E7E0B2448BBA0BA788E0206CD8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4121FD038FF97389273A47DCB729960 /* AIScrollBar-umbrella.h in Headers */,
+				11716BDBFF4F34288CB2C51354CD34D9 /* AIScrollBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F3FC31B40AFC9DF92BA554902739E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D5586B5E959A813E7A01F56024E4A9 /* Pods-ObjC Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54593570684D973B117AB09981E61539 /* Pods-ObjC Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53896AA6BC7F8D87708240AFA7E68358 /* Build configuration list for PBXNativeTarget "Pods-ObjC Example" */;
+			buildPhases = (
+				45F3FC31B40AFC9DF92BA554902739E1 /* Headers */,
+				721B3C045D09FA17421F17050DC10EB3 /* Sources */,
+				557CB5EEF9E89BAB9E63370984120A4B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E0F1E146F09A073F1569435530C1959 /* PBXTargetDependency */,
+			);
+			name = "Pods-ObjC Example";
+			productName = "Pods-ObjC Example";
+			productReference = 17B2EDC5385C20EE6A8F27585AC84F63 /* libPods-ObjC Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C740D0CAD18E2178C851E8B95B6FB53A /* AIScrollBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 232BCF4ECCE2B5F8A79D37F1E7C99B24 /* Build configuration list for PBXNativeTarget "AIScrollBar" */;
+			buildPhases = (
+				0F442E7E0B2448BBA0BA788E0206CD8C /* Headers */,
+				E0E8C76C235CD649EC05D656D0995137 /* Sources */,
+				5835015A87A869C3845CFDDB95637F73 /* Frameworks */,
+				4B3332626E3E2D82B33D8109E2BFCCE4 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIScrollBar;
+			productName = AIScrollBar;
+			productReference = 91D66741C5CA9188BB67CCDF34398395 /* libAIScrollBar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1230;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ADCD90BDA207F50677AF91005B709B51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C740D0CAD18E2178C851E8B95B6FB53A /* AIScrollBar */,
+				54593570684D973B117AB09981E61539 /* Pods-ObjC Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B3332626E3E2D82B33D8109E2BFCCE4 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/AIScrollBar/AIScrollBar.modulemap",
+				"${PODS_ROOT}/Headers/Public/AIScrollBar/AIScrollBar-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/AIScrollBar-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AIScrollBar/AIScrollBar.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AIScrollBar/AIScrollBar-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721B3C045D09FA17421F17050DC10EB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E231BC8672D67DFFE9727C5BA30453C3 /* Pods-ObjC Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E8C76C235CD649EC05D656D0995137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9EEA08D8BBB789FBA3BE234CDF5663 /* AIButtonGroup.swift in Sources */,
+				2BA1BB87926785CC828C8C3E4EDDCB65 /* AIButtonSelectable.swift in Sources */,
+				C43326529CD10C38038DC65DBBC0874A /* AIScrollBar-dummy.m in Sources */,
+				1D1212BC25F64BFAE96EB04EE084C90B /* AIScrollBar.swift in Sources */,
+				C19FA7340672B8B4ECA9342C18B25106 /* AISelectionOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E0F1E146F09A073F1569435530C1959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AIScrollBar;
+			target = C740D0CAD18E2178C851E8B95B6FB53A /* AIScrollBar */;
+			targetProxy = 6CA03AEEF24841472059E04FB786DCE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		094401F666ED7725249F540016097897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF609B0CE843A7DE6E31846E982056C /* AIScrollBar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AIScrollBar/AIScrollBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/AIScrollBar/AIScrollBar.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AIScrollBar;
+				PRODUCT_NAME = AIScrollBar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A57CC72883E4E7C01B75E8E55802C84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43F30C8CA03EEA4A2918B3A9C2C6998 /* AIScrollBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AIScrollBar/AIScrollBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/AIScrollBar/AIScrollBar.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AIScrollBar;
+				PRODUCT_NAME = AIScrollBar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC21F65F214E354A1AE884FCEC75E1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF0A903E2BCA5F2B82CB8A331F502E8 /* Pods-ObjC Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjC Example/Pods-ObjC Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C759D5752F1377657B1843E0BC704748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88ED6E8C401E60C5764CFADCABBA75DA /* Pods-ObjC Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjC Example/Pods-ObjC Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		232BCF4ECCE2B5F8A79D37F1E7C99B24 /* Build configuration list for PBXNativeTarget "AIScrollBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094401F666ED7725249F540016097897 /* Debug */,
+				A57CC72883E4E7C01B75E8E55802C84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53896AA6BC7F8D87708240AFA7E68358 /* Build configuration list for PBXNativeTarget "Pods-ObjC Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C759D5752F1377657B1843E0BC704748 /* Debug */,
+				BC21F65F214E354A1AE884FCEC75E1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
