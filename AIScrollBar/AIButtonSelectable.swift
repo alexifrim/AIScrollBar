@@ -60,7 +60,7 @@ import UIKit
     }
     
     // MARK: - setup
-    @objc static func createDefaultOverlay() -> UIView {
+    @objc public static func createDefaultOverlay() -> UIView {
         return AISelectionOverlay()
     }
     @objc @discardableResult open func setupDefaultOverlay() -> UIView {
