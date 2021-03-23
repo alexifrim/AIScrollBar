@@ -63,7 +63,7 @@ import UIKit
     @objc static func createDefaultOverlay() -> UIView {
         return AISelectionOverlay()
     }
-    @objc @discardableResult func setupDefaultOverlay() -> UIView {
+    @objc @discardableResult open func setupDefaultOverlay() -> UIView {
         assert(self.selectionOverlay == nil, "Resetting the overlay is not handled specifically, and may cause unexpected behavior")
         
         self.selectionOverlay = Self.createDefaultOverlay()
