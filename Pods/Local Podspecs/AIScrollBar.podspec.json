@@ -8,7 +8,9 @@
     "type": "MIT",
     "file": "LICENSE"
   },
-  "authors": "alex ifrim",
+  "authors": {
+    "alex ifrim": "alex@maplicatii.eu"
+  },
   "platforms": {
     "ios": "9.0"
   },
@@ -18,6 +20,5 @@
     "tag": "0.0.1"
   },
   "source_files": "AIScrollBar/**/*.{h,m,swift}",
-  "exclude_files": "Classes/Exclude",
   "swift_version": "5.0"
 }
