@@ -3,6 +3,8 @@
 Horizontal scrollable bar with grouped buttons, suitable to replace toolbars where more content is needed.
 Other controls can be used separately, such as `AISelectableButton` (button with different background color or overlay when selected), and `AIButtonGroup` (similar behavior to `UISegmentedControl`)
 
+[![](https://user-images.githubusercontent.com/420564/112348806-d768fc00-8cd0-11eb-9fdf-8e7de778f879.png)](https://user-images.githubusercontent.com/420564/112348072-25313480-8cd0-11eb-87eb-e7a40aa0ff4d.png)
+[![](https://user-images.githubusercontent.com/420564/112348809-d8019280-8cd0-11eb-897a-21a0b0155d21.png)](https://user-images.githubusercontent.com/420564/112348069-24000780-8cd0-11eb-9161-bd5bc8b11bfe.png)
 
 ## Requirements
 
