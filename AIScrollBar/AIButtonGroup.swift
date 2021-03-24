@@ -8,6 +8,8 @@
 import UIKit
 
 /// Group of buttons that can act as a segmented control that allows multiple selections
+/// Sends `Event.valueChanged` when selection changes
+/// Selection behavior is set through `buttonSelectionHandler`. The class can however be overwritten so that a default behavior (e.g. single selection) can be set through an enum
 @objc open class AIButtonGroup: UIControl {
     internal private(set) var buttons: [AIButtonSelectable] = Array()
     internal private(set) var separators: [UIView] = Array()
@@ -30,6 +32,8 @@ import UIKit
         }
     }
     @objc open var buttonPadding = 24
+    /// The main purpose of this is to set the selection behavior
+    /// - Return: the new selection state for the button at the specified `index`
     @objc open var buttonSelectionHandler: ((_ sender: AIButtonGroup, _ index: Int, _ select: Bool) -> Bool)?
     @objc open var buttonWidth: CGFloat = 0
     
@@ -51,6 +55,8 @@ import UIKit
     }
     
     // MARK: - setup
+    /// Adds a new button to the group
+    /// - Returns: The newly added button
     @objc open func addButton() -> AIButtonSelectable {
         let button = AIButtonSelectable(frame: .zero)
         button.selectionTag = self.buttons.count
@@ -144,6 +150,11 @@ import UIKit
         
     }
 
+    /// Sets the selection state for the button at the specified index.
+    /// Calling this will not result in sending any events or handlers
+    /// - Parameters:
+    ///     - selected: the new selection state
+    ///     - index: the index to which the new selection is applied
     @objc open func setSelection(_ selected: Bool, for index: Int) {
         assert(index >= 0 && index < self.buttons.count)
         
@@ -175,11 +186,13 @@ import UIKit
             }
         }
     }
+    /// Deselect all buttons
     @objc open func deselectAll() {
         while self.selectedIndexes.firstIndex != NSNotFound {
             self.setSelection(false, for: self.selectedIndexes.firstIndex)
         }
     }
+    /// Select all buttons
     @objc open func selectAll() {
         for index in 0 ..< self.buttons.count {
             self.setSelection(true, for: index)

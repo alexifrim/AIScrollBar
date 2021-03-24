@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51A457B02609BBE90098A308 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A457AF2609BBE90098A308 /* File.swift */; };
+		5164D56A260A4859004D44E0 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164D569260A4859004D44E0 /* Empty.swift */; };
 		51FAA6ED2608EB87004BCF2B /* AIScrollBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 51FAA6EB2608EB87004BCF2B /* AIScrollBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51FAA6FB2608FCBC004BCF2B /* AIButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA6F72608FCBC004BCF2B /* AIButtonGroup.swift */; };
 		51FAA6FC2608FCBC004BCF2B /* AIScrollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA6F82608FCBC004BCF2B /* AIScrollBar.swift */; };
@@ -23,9 +23,8 @@
 
 /* Begin PBXFileReference section */
 		233F5F47CC81E969B25513B8 /* libPods-ObjC Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjC Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5164D51C2609BF3F004D44E0 /* AIScrollBar.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = AIScrollBar.podspec; sourceTree = SOURCE_ROOT; };
-		51A457AE2609BBE80098A308 /* ObjC Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		51A457AF2609BBE90098A308 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5164D51C2609BF3F004D44E0 /* AIScrollBar.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AIScrollBar.podspec; sourceTree = SOURCE_ROOT; };
+		5164D569260A4859004D44E0 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		51FAA6E82608EB87004BCF2B /* AIScrollBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AIScrollBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FAA6EB2608EB87004BCF2B /* AIScrollBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIScrollBar.h; sourceTree = "<group>"; };
 		51FAA6EC2608EB87004BCF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,8 +109,7 @@
 				51FAA7152609029F004BCF2B /* LaunchScreen.storyboard */,
 				51FAA7182609029F004BCF2B /* Info.plist */,
 				51FAA7192609029F004BCF2B /* main.m */,
-				51A457AF2609BBE90098A308 /* File.swift */,
-				51A457AE2609BBE80098A308 /* ObjC Example-Bridging-Header.h */,
+				5164D569260A4859004D44E0 /* Empty.swift */,
 			);
 			path = "ObjC Example";
 			sourceTree = "<group>";
@@ -281,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FAA70F2609029C004BCF2B /* ViewController.m in Sources */,
-				51A457B02609BBE90098A308 /* File.swift in Sources */,
+				5164D56A260A4859004D44E0 /* Empty.swift in Sources */,
 				51FAA7092609029C004BCF2B /* AppDelegate.m in Sources */,
 				51FAA71A2609029F004BCF2B /* main.m in Sources */,
 			);
@@ -491,7 +489,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexifrim.ObjC-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ObjC Example/ObjC Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,7 +512,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexifrim.ObjC-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ObjC Example/ObjC Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

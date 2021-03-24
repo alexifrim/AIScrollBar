@@ -11,7 +11,9 @@ import UIKit
 /// Button which also changes background color based on the selection state
 @objc open class AIButtonSelectable: UIButton {
     // MARK: properties
+    /// Default selection background color
     @objc open var backgroundColorDefault: UIColor?
+    /// Background color while button is selected
     @objc open var backgroundColorSelected: UIColor? {
         didSet {
             if self.isSelected {
@@ -60,9 +62,11 @@ import UIKit
     }
     
     // MARK: - setup
+    /// Creates the default overlay to show over the selection
     @objc public static func createDefaultOverlay() -> UIView {
         return AISelectionOverlay()
     }
+    /// Prepares and sets the default selection overlay - if this method is not called, no overlay is shown
     @objc @discardableResult open func setupDefaultOverlay() -> UIView {
         assert(self.selectionOverlay == nil, "Resetting the overlay is not handled specifically, and may cause unexpected behavior")
         

@@ -24,6 +24,7 @@ import UIKit
     internal var borderBottom: UIView?;
     
     /// Color used for top/bottom border as well as separator between different groups
+    /// - Note: The new color is only applied to borders and separators that are added afterwards, while existing ones will keep their current color
     @objc open var borderColor: UIColor = .gray
     /// Color used as separator between buttons inside a group
     @objc open var separatorColor: UIColor = .black
@@ -46,6 +47,10 @@ import UIKit
     }
     
     // MARK: - setup
+    /// Creates and adds a new button group to the bar
+    /// - Returns: the newly added group
+    /// - Parameters:
+    ///     - setup: The block in which the group  buttons should be added
     @objc open func addButtonGroup(with setup: (_ group: AIButtonGroup) -> Void) -> AIButtonGroup {
         if self.buttonGroups.count > 0 {
             self.addSeparator()
@@ -73,6 +78,7 @@ import UIKit
         self.addSubview(border)
         self.separators.append(border)
     }
+    /// Adds top and bottom borders to the bar
     @objc open func setupBorders() {
         assert(self.borderTop == nil && self.borderBottom == nil, "Borders are already set")
         if self.borderTop != nil {
