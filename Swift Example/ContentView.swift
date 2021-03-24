@@ -67,14 +67,6 @@ struct ContentView: View {
                     // remove current selection
                     sender.deselectAll()
                     
-                    let color = sender[index].backgroundColor
-                    if groupStyle.selectedIndexes.contains(0) {
-                        groupStyle[0].backgroundColor = color
-                    }
-                    if groupStyle.selectedIndexes.contains(1) {
-                        groupStyle[1].setTitleColor(color, for: .normal)
-                    }
-                    
                     return selection
                 }
                 groupColors.setSelection(true, for: 0)
